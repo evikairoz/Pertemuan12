@@ -9,6 +9,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
@@ -47,8 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(MainActivity.this, "Username Incorrect", Toast.LENGTH_SHORT).show();
                 }
-            }
+            };
         });
-
-    }
+        }
 }

@@ -31,6 +31,8 @@
         android:ems="10"
         android:hint=" Masukkan E-mail"
         android:layout_marginBottom="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:inputType="textEmailAddress"
         android:background="@drawable/rounded_edittext"
         android:minHeight="48dp"/>
@@ -49,7 +51,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint=" Masukkan Password"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:inputType="numberPassword"
         android:background="@drawable/rounded_edittext"
         android:minHeight="48dp"/>

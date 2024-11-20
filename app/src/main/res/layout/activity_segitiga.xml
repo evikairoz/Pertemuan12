@@ -1,10 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Segitiga">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textsegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="25dp"
+        android:text="PERHITUNGAN SEGITIGA"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/textalas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Alas:  "
+            android:textSize="18dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp" />
+
+        <!-- EditText Alas -->
+        <EditText
+            android:id="@+id/editAlas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="Masukkan alas"
+            android:fontFamily="sans-serif"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <!-- TINGGI -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/texttinggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Tinggi: "
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edittinggi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Masukkan tinggi"
+                android:fontFamily="sans-serif"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <!-- BUTTON -->
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnhitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Hitung"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btnhapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="250dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Hapus"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <!-- HASIL -->
+    <TextView
+        android:id="@+id/texthasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"
+        android:hint="Hasil luas segitiga"/>
+
+</LinearLayout>
